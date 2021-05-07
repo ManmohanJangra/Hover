@@ -1,0 +1,430 @@
+body{
+    height: 200vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+/*1st*/
+
+.css1{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 50px 100px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    text-align: center;
+}
+
+.css1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: coral;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    transition: transform 500ms;
+}
+
+.css1:hover:before{
+    transform:rotate(0) ;
+}
+
+.css1:hover{
+    color: floralwhite;
+    font-size: 3rem;
+}
+
+/*2nd*/
+
+.css2{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 50px 100px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    text-align: center;
+}
+
+.css2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:darkslategray;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.css2:hover:before{
+    transform: translateX(0);
+}
+.css2:hover{
+    color: white;
+    font-size: 3rem;
+}
+
+/*3rd*/
+
+.css3{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 50px 100px;
+    position: relative;
+    transition: color 1s;
+    text-align: center;
+}
+
+.css3:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightslategray;
+    transition: 1s;
+    transform: rotateX(90deg);
+    z-index: -1;
+}
+
+.css3::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightslategray;
+    transition: 1s;
+    transform: rotateY(90deg);
+    z-index: -1;
+}
+
+.css3:hover::before{  
+    transform: rotateX(0deg);
+}
+
+.css3:hover::after{  
+    transform: rotateY(0deg);
+}
+
+.css3:hover{
+    color: white;
+    font-size: 3rem;
+}
+
+/*4th*/
+
+.css4{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 50px 100px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.css4:hover{
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 3rem;
+    border: 5px solid black;
+    color: black;
+}
+
+/*5th*/
+
+.css5{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 50px 100px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s;
+    text-align: center;
+}
+
+.css5::before{
+    content: 'Yeah!';
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:salmon;
+    transform: translateY(-100%);
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css5:hover:before{
+    transform: translateX(0);
+}
+
+.css5:hover{
+    font-size: 3rem;
+}
+/*6th*/
+
+.css6{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 50px 100px;
+    position: relative;
+    overflow: hidden;
+    transition: color 3s, background-color 3s;
+    text-align: center;
+}
+
+.css6::before{
+    content: '';
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color:black;
+    transform: translateX(-100%) rotate(45deg);
+    transition: transform 3s;
+}
+
+.css6:hover::before{
+    transform: translateX(100%) rotate(130deg);
+}
+
+.css6:hover{
+    background-color: grey;
+    color: white;
+}
+
+.css6:hover{
+    font-size: 3rem;
+}
+/*7th*/
+
+.css7{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: transparent;
+    background-color: black;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 50px 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.css7::before{
+    content: 'Hover Me';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: chartreuse;
+    transition: all 0.5s;
+}
+
+.css7::after{
+    content: 'Hover Me';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: chartreuse;
+    transform: translate(-100%, 100%);
+    transition: all 0.5s;
+}
+
+.css7:hover::before{
+    transform: translate(100%, -100%);
+}
+
+.css7:hover::after{
+    transform: translate(0);
+}
+
+.css7:hover{
+    font-size: 3rem;
+}
+
+/*8th*/
+
+.css8{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: Black;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 50px 100px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.css8:before{
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategrey;
+    color: white;
+    transform: scale(5);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.css8:hover::before{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.css8:hover{
+    font-size: 3rem;
+}
+
+/*9th*/
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a{
+    font-family: sans-serif;
+    font-size: 1rem;
+    display: block;
+    width: 120px;
+    height: 40px;
+    color: grey;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+}
+
+ul li span{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color: darkslategrey;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: left;
+}
+
+a:hover{
+    color: white;
+    font-size: 1.25rem;
+}
+
+a:hover span{
+    transform: scaleX(1);
+}
+
+span:nth-child(2){
+    top: 25%;
+    transition-delay: 0.1s;
+}
+span:nth-child(3){
+    top: 50%;
+    transition-delay: 0.2s;
+}
+span:nth-child(4){
+    top: 75%;
+    transition-delay: 0.3s;
+}
+
+/*10th*/
+
+.css10{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: tomato;
+    font-size: 3rem;
+    border: 4px solid tomato;
+    padding: 50px 100px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.css10::before{
+    content: '';
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    background-color: tomato;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.css10:hover::before{
+    height: 190%;
+}
+
+.css10:hover{
+    font-size: 3rem;
+}
